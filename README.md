@@ -1,14 +1,14 @@
 # Covid restaurant explorer
 
-## How to initialise dev environment:
+### How to initialise dev environment:
 
-### Clone this repo, and inside the IDE run:
+1) Clone this repo, and inside the IDE run:
 
 npm install 
 
 (installs node module dependencies)
 
-### To start the server:
+2) To start the server:
 
 npm run devStart 
 
