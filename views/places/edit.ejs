@@ -1,0 +1,28 @@
+<h2><%= place.name %></h2>
+<p>
+    <%= place.description %>
+</p>
+<p>
+    <%= place.publishDate %>
+</p>
+
+<form action="/publish/<%= place.id %>?_method=PUT" method="POST">
+    <label>Name</label>
+    <input type="text" name="name" value="<%= place.name %>">
+    <label>Description</label>
+    <input type="text" name="description" value="<%= place.description %>">
+    <button type="submit">Submit Changes</button>
+</form>
+
+<div>
+    <a href="/">Cancel</a>
+</div>
+
+<form action="/publish/<%= place.id %>?_method=DELETE" method="POST">
+    <button type="submit">Delete permanently</button>
+</form>
+ 
+
+
+
+

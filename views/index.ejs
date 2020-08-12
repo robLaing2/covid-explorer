@@ -1,0 +1,26 @@
+<%# Iterate through each place, and produce an item card divider %>
+
+<div class="container">
+<% places.forEach(place=>{%> 
+        
+<div class="place-container">
+    <a href ="/places/<%= place.slug %> " class="link">
+        <div class="content">
+            <h3 class="place-name" href="#"><%= place.name %></h3>
+            <p class="place-headline">
+                <%= place.description %>
+            </p>
+            <p class="place-date">
+                <%= place.publishDate %>
+            </p>    
+        </div>
+    </a>
+    <div class="vote-wrapper">
+        <button class="button">
+            <div class="button-test">32 ^</div>
+        </button>
+    </div> 
+</div>
+    
+<% }) %> 
+</div>

@@ -1,4 +1,4 @@
-# Covid restaurant explorer
+# Covid Restaurant explorer
 
 ### How to initialise dev environment:
 
@@ -13,5 +13,7 @@
     npm run devStart 
 
 (devStart script uses nodemon package which automatically refreshes when we change files... handy)
+
+3) http://localhost:3000 
 
 
