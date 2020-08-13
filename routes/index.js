@@ -1,15 +1,15 @@
 const express = require('express')
 const router = express.Router()
-const Place = require('../models/place')
+const Product = require('../models/product')
 
+// Default route for the main index page
 router.get('/', async (req, res) =>{
     try {
-        // Limits the number of entries returned and the order
-        const places = await Place.find({}).sort({publishDate: 'desc'}).limit(100).exec()
-        res.render('index', {places: places})
+        // Limit the number of returned items and their order
+        const products = await Product.find({}).sort({publishDate: 'desc'}).limit(100).exec()
+        res.render('index', {products: products})
     } catch{
         res.redirect('/')
     }
 })
-
 module.exports = router

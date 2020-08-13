@@ -1,26 +1,20 @@
-<%# Iterate through each place, and produce an item card divider %>
-
+<%# List view of items: iterate through each, and produce an item card div for each %>
 <div class="container">
-<% places.forEach(place=>{%> 
-        
-<div class="place-container">
-    <a href ="/places/<%= place.slug %> " class="link">
+<% products.forEach(product=>{%> 
+
+<div class="product-container">
+    <a href ="/products/<%= product.slug %> " class="link">
         <div class="content">
-            <h3 class="place-name" href="#"><%= place.name %></h3>
-            <p class="place-headline">
-                <%= place.description %>
+            <h3 class="product-name" href="#"><%= product.name %></h3>
+            <p class="product-headline">
+                <%= product.description %>
             </p>
-            <p class="place-date">
-                <%= place.publishDate %>
+            <p class="product-date">
+                <%= product.publishDate %>
             </p>    
         </div>
     </a>
-    <div class="vote-wrapper">
-        <button class="button">
-            <div class="button-test">32 ^</div>
-        </button>
-    </div> 
 </div>
-    
+
 <% }) %> 
 </div>

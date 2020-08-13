@@ -1,0 +1,27 @@
+<%# Edit an existing item partial view %>
+<h2><%= product.name %></h2>
+<p>
+    <%= product.description %>
+</p>
+<p>
+    <%= product.publishDate %>
+</p>
+
+<form action="/publish/<%= product.id %>?_method=PUT" method="POST">
+    <label>Name</label>
+    <input type="text" name="name" value="<%= product.name %>">
+    <label>Description</label>
+    <input type="text" name="description" value="<%= product.description %>">
+    <button type="submit">Submit Changes</button>
+</form>
+<div>
+    <a href="/">Cancel</a>
+</div>
+<form action="/publish/<%= product.id %>?_method=DELETE" method="POST">
+    <button type="submit">Delete permanently</button>
+</form>
+ 
+
+
+
+

@@ -55,10 +55,6 @@ ul{
     align-items: center;
 }
 
-.navbar .logo:hover{
-    color: #6FCF97;
-    cursor: pointer;
-}
 
 .navbar .nav{
     justify-self: flex-end;
@@ -76,7 +72,6 @@ ul{
 }
 
 .product-container{
-   
     position: relative;
     display: block;
     top: 50px;
@@ -96,9 +91,6 @@ ul{
     display: flex;
 }
 
-.image-holder{
-    margin-right: 10px; 
-}
 
 .content{
     display: flex;
@@ -126,28 +118,7 @@ ul{
     font-size: 1rem;
 }
 
-.vote-wrapper{
-    position: absolute;
-    top: 20%;
-    right: 20px;
-    display: block;
-}
 
 
-.vote-wrapper .button{
-    height: 70px;
-    width: 70px;
-    margin-left: 12px;
-    border-color: #e8e8e8;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border: 1px solid gainsboro;
-    position: absolute;
-    right: -50px;
-    top:0;
-}
 
-.vote-wrapper .button:hover {
-    background-color: #F3F3F3;
-    cursor: pointer;
-}
 
