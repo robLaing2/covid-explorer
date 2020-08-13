@@ -1,15 +1,14 @@
 <%# New item form partial view %>
 <h2>New Whatever</h2>
-<form action="/publish" method="POST" enctype ="multipart/form-data">
-    <label>Name</label>
-    <input type="text" name="name" value="<%= product.name %>">
-    <label>Description</label>
-    <input type="text" name="description" value="<%= product.description %>">
+<form action="/publish" method="POST" enctype="multipart/form-data">
+  <label>Name</label>
+  <input type="text" name="name" value="<%= product.name %>" />
+  <label>Description</label>
+  <input type="text" name="description" value="<%= product.description %>" />
 
-    <label>Date</label>
-    <input type="date" name="publishDate" 
-        value="<%= product.publishDate %>">
+  <label>Date</label>
+  <input type="date" name="publishDate" value="<%= product.publishDate %>" />
 
-    <a href="/">Cancel</a>
-    <button type="submit">Create</button>
+  <a href="/">Cancel</a>
+  <button type="submit">Create</button>
 </form>

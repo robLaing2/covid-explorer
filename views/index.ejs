@@ -1,20 +1,21 @@
-<%# List view of items: iterate through each, and produce an item card div for each %>
+<%# List view of items: iterate through each, and produce an item card div for
+each %>
 <div class="container">
-<% products.forEach(product=>{%> 
+  <% products.forEach(product=>{%>
 
-<div class="product-container">
-    <a href ="/products/<%= product.slug %> " class="link">
-        <div class="content">
-            <h3 class="product-name" href="#"><%= product.name %></h3>
-            <p class="product-headline">
-                <%= product.description %>
-            </p>
-            <p class="product-date">
-                <%= product.publishDate %>
-            </p>    
-        </div>
+  <div class="product-container">
+    <a href="/products/<%= product.slug %> " class="link">
+      <div class="content">
+        <h3 class="product-name" href="#"><%= product.name %></h3>
+        <p class="product-headline">
+          <%= product.description %>
+        </p>
+        <p class="product-date">
+          <%= product.publishDate %>
+        </p>
+      </div>
     </a>
-</div>
+  </div>
 
-<% }) %> 
+  <% }) %>
 </div>
